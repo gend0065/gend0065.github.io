@@ -9,10 +9,11 @@
 	<header id="header">
 		<h1>Assignment 2</h1>
 	</header>
-	<main id="main" class="body-element">
+	<main id="main" class="body">
 		<h2>Employee List</h2>
-		<section id="table" class="main-elements">
-			<table border="1">
+		<section id="table" class="main">
+			<!-- formatting a table -->
+			<table id="table1" class= "table" border="1" align="center">
 				<thead>
 					<tr>
 						<th>Id</th>
@@ -20,7 +21,7 @@
 						<th>email</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody>	
 					<tr>
 						<td>1</td>
 						<td>John</td>
@@ -47,18 +48,19 @@
 						<td>Rob@fakemail.com</td>
 					</tr>
 				</tbody>
-				<tfoot>
+				<tfoot>	
 					<tr>
 						<td colspan="3">
 							All of the above are Division Heads
 						</td>
 					</tr>
-				</tfoot>
+				</tfoot>	
 			</table>
 		</section>
-		<section id="images" class="main-elements">
+		<section id="images" class="main">
 			<h2>Animals</h2>
-			<article>
+			<article id="animals" class="images">
+				<!-- inserting images -->
 				<figure>
 					<img src="img/elephant.jpg" alt="elephant" width="300" height="200">
 					<figcaption>This is an Elephant</figcaption>
@@ -81,18 +83,20 @@
 				</figure>
 			</article>
 		</section>
-		<section id="html-entities" class="main-elements">
+		<section id="html-entities" class="main">
 			<h2>HTML Entities</h2>
-			<article>
-					<p>Non Breaking Space: &#160;</p>
-					<p>ampersand: &#38;</p>
-					<p>Pound: &#163;</p>
-					<p>Copyright: &#169;</p>
+			<article id="characters" class="html-entities">
+				<!-- characters in HTML -->
+				<p>Non Breaking Space: &#160;</p>
+				<p>ampersand: &#38;</p>
+				<p>Pound: &#163;</p>
+				<p>Copyright: &#169;</p>
 			</article>	
 		</section>
-		<section id="special-tags" class="main-elements">
+		<section id="special-tags" class="main">
 			<h2>Special Tags</h2>
 			<article id="detailed-list" class="special-tags">
+				<!-- formatting detailed list -->
 				<dl>
 					<dt>Coffee</dt>
 					<dd>&#8209;black hot drink</dd>
@@ -100,11 +104,13 @@
 					<dd>&#8209; white cold drink</dd>
 				</dl>
 			</article>
-			<div>
+			<div id="text" class="special-tags">
+				<!-- inserting text -->
 				<p>HTML</p>
 				<p>CSS</p>
 			</div>
 			<article id="mobile-phone" class="special-tags">
+				<!-- revealing text with a tab -->
 				<details> 
 			       <summary>What is a mobile Phone?</summary>
 			       <p>A mobile phone, cell phone or hand phone, sometimes shortened to simply mobile, cell or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area.</p>
@@ -112,7 +118,8 @@
 			</article>
 		</section>
 	</main>
-	<footer id="footer" class="body-element">
+	<footer id="footer" class="body">
+		<!-- insering a hidden comment -->
 		<h2>Hidden Comment:</h2>
 		<!-- This is a hidden comment -->
 	</footer>
