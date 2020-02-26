@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-ca"> <!-- sets language to Canadian English -->
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Creating a Form">
+	<meta name="keywords" content="HTML Forms">
+	<title>Form</title>
+</head>
+<body>
+	<header id="header" class="body">
+		<h1>Assignment 3</h1>
+	</header>
+	<div id="wrapper" class="wrapper">
+		<section id="html-forms" class="main-section">
+			<form action="somepage.php" method="get">
+				<div id="fn-container" class="form-elm">
+					<label for="FirstName">First name</label>
+					<input type="text" name="FirstName" id="FirstName" placeholder="First name">
+				</div>
+
+				<div id="ln-container" class="form-elm">
+					<label for="LastName">Last Name</label>
+					<input type="text" name="LastName" id="LastName" placeholder="Last Name">
+				</div>
+
+				<div id="email-container" class="form-elm">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" placeholder="user@domain.com">
+				</div>
+
+				<div id="pass-container" class="form-elm">
+					<label for="pass">Password</label>
+					<input type="password" name="pass" id="pass" required>
+				</div>
+
+				<div id="intro-container" class="form-elm">
+					<label for="introduction">Introduction</label>
+					<textarea name="introduction" id="introduction" placeholder="Enter introduction here">
+					</textarea>
+				</div>
+
+				<div id="st-container" class="form-elm">
+					<label for="url">Enter a URL:</label>	
+					<input type="url" name="url" id="url" ><br>
+					<label for="date">Enter your birthday</label>
+					<input type="date" name="date" id="date">
+				</div>
+
+				<div id="location-drop-container" class="form-elm">
+					<label for="country">Country:</label>
+					<select name="country" id="country">
+						<option value="select">Please select</option>
+						<option value="Canada">Canada</option>
+						
+					</select><br>
+
+					<label for="province">Province or Territory:</label>
+					<select name="province" id="province">
+						<option value="select">Please select</option>
+						<option value="Alberta">Alberta</option>
+						<option value="British Columbia">British Columbia</option>
+						<option value="Manitoba">Manitoba</option>
+						<option value="New Brunswick">New Brunswick</option>
+						<option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+						<option value="Northwest Territories">Northwest Territories</option>
+						<option value="Nova Scotia">Nova Scotia</option>
+						<option value="Nunavut">Nunavut</option>
+						<option value="Ontario">Ontario</option>
+						<option value="Prince Edward Island">Prince Edward Island</option>
+						<option value="Quebec">Quebec</option>
+						<option value="Saskatchewan">Saskatchewan</option>
+						<option value="Yukon">Yukon</option>
+					</select>
+				</div>
+
+				<div id="hobby-container" class="form-elm">
+					<h3>Hobbies or Interests:</h3>
+
+					<label for="art">Art</label>
+					<input type="checkbox" name="hobby" id="art" value="art"> <br>
+
+					<label for="baking">Baking</label>
+					<input type="checkbox" name="hobby" id="baking" value="baking"> <br>
+
+					<label for="gaming">Gaming</label>
+					<input type="checkbox" name="hobby" id="gaming" value="gaming"> <br>
+
+					<label for="reading">Reading</label>
+					<input type="checkbox" name="hobby" id="reading" value="reading"> <br>
+
+					<label for="sports">Sports</label>
+					<input type="checkbox" name="hobby" id="sports" value="sports"> <br>
+				</div>
+
+				<div id="radio-container" class="form-elm">
+					<p>Select your Gender</p>
+					<label for="male">
+						<input type="radio" name="like-form" id="male" value="male">
+						Male
+					</label>
+					<label for="female">
+						<input type="radio" name="like-form" id="female" value="female">
+						Female
+					</label>
+				</div>
+
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
