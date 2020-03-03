@@ -14,41 +14,46 @@
 		<!-- This is the section containing the form -->
 		<section id="form" class="wrapper">
 			<form action="somepage.php" method="get">
-				<!-- Request for name -->
-				<div id="fn-container" class="name">
-					<label for="FirstName">First name:</label>
-					<input type="text" name="FirstName" id="FirstName" placeholder="First name">
-				</div><br>
 
-				<div id="ln-container" class="name">
+				<!-- Request for name -->
+				<div id="name-container" class="name">
+					<label for="FirstName">First name:</label>
+					<input type="text" name="FirstName" id="FirstName" placeholder="First name"><br><br>
+
 					<label for="LastName">Last Name:</label>
 					<input type="text" name="LastName" id="LastName" placeholder="Last Name">
 				</div><br>
+
 				<!-- Request for email address -->
 				<div id="email-container" class="email">
 					<label for="email">Email address:</label>
 					<input type="email" name="email" id="email" placeholder="user@domain.com" required>
 				</div><br>
+
 				<!-- Request for password -->
 				<div id="pass-container" class="password">
 					<label for="pass">Password:</label>
 					<input type="password" name="pass" id="pass" required>
 				</div><br>
+
 				<!-- Request for introduction -->
 				<div id="intro-container" class="introduction">
 					<label for="intro">Introduce yourself:</label>
-					<textarea name="intro" id="intro" placeholder="Compose your introduction here">
-					</textarea>
+					<textarea name="intro" id="intro" placeholder="Compose your introduction here"></textarea>
 				</div><br>
 
-				<div id="info-container" class="personal-information">
-					<!-- Request for date of birth -->
-					<label for="date">Enter your birthday</label>
-					<input type="date" name="date" id="date" required><br><br>
-					<!-- Request for mobile phone number -->
+				<!-- Request for date of birth -->
+				<div id="dob-container" class="personal-info">	
+					<label for="date">Enter your birthday:</label>
+					<input type="date" name="date" id="date" required>
+				</div><br>
+
+  				<!-- Request for mobile phone number -->	
+				<div id="phone-container" class="personal-info">
 					<label for="phone">Enter your mobile phone number:</label>
   					<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
 				</div>
+
 				<!-- Request for gender identification -->
 				<div id="radio-container" class="form-elm">
 					<p>Select your Gender:</p>
@@ -57,6 +62,7 @@
 					  <input type="radio" id="female" name="gender" value="female" required>
 					  <label for="female">Female</label>
 				</div><br>
+
 				<!-- Request for current residence information -->
 				<div id="address-container" class="location">
 					<label for="address">Address:</label>
@@ -73,6 +79,7 @@
 					<select name="country" id="country">
 						<option value="select">Please select</option>
 						<option value="Canada">Canada</option>
+						<option value="other-country">Other</option>
 					</select><br><br>
 
 					<label for="province">Province or Territory:</label>
@@ -91,16 +98,18 @@
 						<option value="Quebec">Quebec</option>
 						<option value="Saskatchewan">Saskatchewan</option>
 						<option value="Yukon">Yukon</option>
+						<option value="other-province">Other</option>
 					</select>
 				</div><br>
 
 				<div id="PostalCode-container" class="location">
-					<label for="PostalCode">Address:</label>
+					<label for="PostalCode">Postal Code:</label>
 					<input type="text" name="PostalCode" id="PostalCode">
-				</div><br>
+				</div>
+
 				<!-- Request for hobby info -->
 				<div id="hobby-container" class="form-elm">
-					<h3>Hobbies or Interests:</h3>
+					<h4>Hobbies or Interests:</h4>
 					<label for="art">Art</label>
 					<input type="checkbox" name="hobby" id="art" value="art"><br>
 
@@ -116,6 +125,7 @@
 					<label for="sports">Sports</label>
 					<input type="checkbox" name="hobby" id="sports" value="sports"><br>
 				</div><br>
+
 				<!-- Request for url -->
 				<div id="web-container" class="url">
 					<label for="url">Enter a URL:</label>
