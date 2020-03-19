@@ -1,9 +1,53 @@
 @charset "utf-8";
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-header, footer {
-  background-color: lightgreen
+html, body,h1, h2, article, figure,
+figcaption, footer, header, nav, 
+output, nav,
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-header p {
-  background-color: lightskyblue
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+/* Header styles */ 
+header {
+	background: lightgreen;
+
+}
+
+.logo {
+	float: left;
+	width:300px;
+	padding: 15px;
+	box-sizing: border-box;
+	background: lightskyblue;
+	/*box-sizing border box makes the width adjust according to padding*/
+}
+
+h1 {
+	float: left;
+	width: calc(100% -120px);
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+img {
+	width: 300px;
 }

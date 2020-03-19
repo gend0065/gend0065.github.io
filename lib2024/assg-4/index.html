@@ -11,17 +11,21 @@
 	<header>
 		<h1>Title of Page</h1>
 		<!-- inserting logo -->
-		<figure id="logo" class="header">
-			<img src="img/logo.png" alt="logo" width="300" height="200">
+		<figure>
+			<img src="img/logo.png" alt="Logo" id="logo" class="header">
 		</figure>
-		<!-- Tabs -->
-		<p id="home" class="header">Home</p>
-		<p id="about" class="header">About</p>
-		<p id="contact" class="header">Contact</p>
-		<p id="work" class="header">Work</p>
 	</header>
+
+	<!-- Tabs -->
+	<nav>
+		<p id="home" class="nav">Home</p>
+		<p id="about" class="nav">About</p>
+		<p id="contact" class="nav">Contact</p>
+		<p id="work" class="nav">Work</p>
+	</nav>
+
 	<main>
-		<section id="pri-content" class="main">
+		<div id="pri-content" class="column-left">
 			<!-- This is the main content of the page -->
 			<h2>Main Content Title</h2>
 			<article id="main-content" class="pri-content">
@@ -35,15 +39,15 @@
 					This is where the text information will go. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
 				</p>
 			</article>
-		</section>	
+		</div>	
 
-		<section id="sec-content" class="main">	
+		<div id="sec-content" class="column-left">	
 			<!-- This is the secondary content of the page -->
 			<h3>Secondary Content Title</h3>
 			<article id="img-1" class="sec-content">
 				<!-- image 1 -->
 				<figure>
-					<img src="img/logo.png" alt="cat" width="300" height="200">
+					<img src="img/logo-square.jpg" alt="Cat" class="square">
 					<figcaption>Image 1</figcaption>
 				</figure>
 			</article>	
@@ -51,7 +55,7 @@
 			<article id="img-2" class="sec-content">
 				<!-- image 2 -->
 				<figure>
-					<img src="img/logo.png" alt="cat" width="300" height="200">
+					<img src="img/logo-square.jpg" alt="Cat" class="square">
 					<figcaption>Image 2</figcaption>
 				</figure>
 			</article>		
@@ -59,25 +63,41 @@
 			<article id="img-3" class="sec-content">
 				<!-- image 3 -->
 				<figure>
-					<img src="img/logo.png" alt="cat" width="300" height="200">
+					<img src="img/logo-square.jpg" alt="Cat" class="square">
 					<figcaption>Image 3</figcaption>
 				</figure>
 			</article>
-		</section>
+		</div>
 
 		<!-- This is the sidebar content of the page -->
-		<section id="side-content" class="main">
+		<div id="side-content" class="column-right">
+			<article id="side-photo" class="side-content">
+				<!-- side photo -->
+				<figure>
+					<img src="img/logo-square.jpg" alt="Cat" class="square">
+				</figure>
+			</article>
 			<h3>Title of the Sidebar</h3>
 			<article>
 				<p>
 					Sidebar text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
 				</p>
 			</article>
-		</section>
+		</div>
 	</main>
+
 	<!-- This is the copyright notice and relevant links -->
 	<footer>
 		<p>CopyRight 2017, All Rights Reserved.</p>
+		<figure>
+			<img src="img/facebook.png" alt="Facebook" class="link">
+		</figure>
+		<figure>
+			<img src="img/youtube.png" alt="Youtube" class="link">
+		</figure>
+		<figure>
+			<img src="img/twitter.png" alt="Twitter" class="link">
+		</figure>
 	</footer>
 </body>
 </html>
