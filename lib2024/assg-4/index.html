@@ -5,23 +5,34 @@
 	<meta name="description" content="Mockup Webpage">
 	<meta name="keywords" content="HTML, CSS">
 	<title>Assignment 4</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header>
-		<h1>Title of Page</h1>
+	<header id="header" class="site-border">
 		<!-- inserting logo -->
-		<figure>
-			<img src="img/logo.png" alt="Logo" id="logo" class="header">
-		</figure>
+		<img src="img/logo.png" alt="Logo" id="logo" class="header">
+		<h1>Title of Page</h1>
 	</header>
 
 	<!-- Tabs -->
-	<nav>
-		<p id="home" class="nav">Home</p>
-		<p id="about" class="nav">About</p>
-		<p id="contact" class="nav">Contact</p>
-		<p id="work" class="nav">Work</p>
+	<nav class="main-nav-container">
+		<ul class="main-nav">
+			<li>
+				<a href="home.html">Home</a>
+			</li>
+
+			<li>
+				<a href="about.html">About</a>
+			</li>
+
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+
+			<li>
+				<a href="work.html">Work</a>
+			</li>
+		</ul>
 	</nav>
 
 	<main>
@@ -77,8 +88,9 @@
 					<img src="img/logo-square.jpg" alt="Cat" class="square">
 				</figure>
 			</article>
-			<h3>Title of the Sidebar</h3>
+
 			<article>
+				<h3>Title of the Sidebar</h3>
 				<p>
 					Sidebar text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
 				</p>
@@ -87,14 +99,16 @@
 	</main>
 
 	<!-- This is the copyright notice and relevant links -->
-	<footer>
+	<footer id="footer" class="site-border">
 		<p>CopyRight 2017, All Rights Reserved.</p>
 		<figure>
 			<img src="img/facebook.png" alt="Facebook" class="link">
 		</figure>
+
 		<figure>
 			<img src="img/youtube.png" alt="Youtube" class="link">
 		</figure>
+
 		<figure>
 			<img src="img/twitter.png" alt="Twitter" class="link">
 		</figure>

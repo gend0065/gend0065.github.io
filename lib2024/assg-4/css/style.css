@@ -1,9 +1,18 @@
 @charset "utf-8";
 
-header, footer {
-  background-color: lightgreen
+/* setting background image */
+body {
+	background-image: url("../img/background.png");
+	margin: 0;
 }
 
-header p {
-  background-color: lightskyblue
+/* setting background colour */
+.site-border {
+  	padding: 20px;
+  	background-color: lightgreen;
+}
+
+/* change image size */
+img {
+	width: 300px;
 }
