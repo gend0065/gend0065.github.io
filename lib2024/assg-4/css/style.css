@@ -1,18 +1,191 @@
 @charset "utf-8";
 
-/* setting background image */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*CSS clearfix*/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* styling webpage settings */
 body {
-	background-image: url("../img/background.png");
-	margin: 0;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}  
+
+/* viewing size and background image settings */
+#wrapper {
+  background-image: url("../img/circles-light.png");
+  max-width: 960px;
+  margin: auto auto;
 }
 
-/* setting background colour */
-.site-border {
-  	padding: 20px;
-  	background-color: lightgreen;
+/* green header background */
+header {
+  background-color: #7CC576;
+  height: 20%;
 }
 
-/* change image size */
-img {
-	width: 300px;
+/* logo placement */
+#logo {
+  float: none;
+  vertical-align: middle;
+  margin: 1% 2% 0% 2%;
+}
+
+/* titles */
+h1 {
+  display: inline-block;
+  font-size: 3em;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* navigation */
+#main-nav {
+  text-align: center;
+  list-style-type: none;
+  margin-top: 0;
+}
+
+/* remove bullet points and separate nav links */
+nav ul li a {
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #000;
+  margin: 2%;
+}
+
+/* reformat nav links */
+nav ul li {
+  background-color: #6DCFF6;
+  display: inline-block; 
+  border-radius: 5px;
+  width: 100px;   
+  padding: 20px;
+  margin: 2%
+}
+
+main {
+  height: 100%;
+  margin: 1%;
+}
+
+/* primary and secondary content */
+#pri-content {
+  width: 65%;
+  display: inline-block;
+}
+
+/* secondary content */
+#sec-content {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin: 1%;
+}
+
+#sec-content h3 {
+  text-align: left;
+}
+
+figure {
+  display: inline-block;
+}
+
+.threeimg {
+  position: relative;
+  width: 200px;
+}
+
+/* side content */
+#side-content {
+  width: 30%;
+  float: right;
+}
+
+#sidebar p {
+  float: left;
+}
+
+aside {
+  padding: 3%;
+}
+
+/* resize the square cat images */
+.square {
+  width: 250px;
+}
+
+/* footer */
+footer {
+    background-color: #7CC576;
+    padding: 2%;
+}
+
+footer p {
+    display: inline;
+    float: left;
+    padding: 0.5%;
+}
+
+#social-media {
+    display: inline-block;
+    margin-left: 50%;
+}
+
+.link {
+    margin-right: 6px;
+    position: relative;
+    float: right;
 }

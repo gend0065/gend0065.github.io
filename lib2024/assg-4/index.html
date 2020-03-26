@@ -6,112 +6,103 @@
 	<meta name="keywords" content="HTML, CSS">
 	<title>Assignment 4</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 <body>
-	<header id="header" class="site-border">
-		<!-- inserting logo -->
-		<img src="img/logo.png" alt="Logo" id="logo" class="header">
-		<h1>Title of Page</h1>
-	</header>
+	<div id="wrapper">
+		<header>
+			<!-- inserting logo -->
+			<img src="img/logo.png" alt="Logo" id="logo">
+			<h1>Title of Page</h1>
 
-	<!-- Tabs -->
-	<nav class="main-nav-container">
-		<ul class="main-nav">
-			<li>
-				<a href="home.html">Home</a>
-			</li>
+			<!-- Tabs -->
+			<nav id="topnav">
+				<ul id="main-nav">
+					<li>
+						<a href="home.html" class="nav-links">Home</a>
+					</li>
 
-			<li>
-				<a href="about.html">About</a>
-			</li>
+					<li>
+						<a href="about.html" class="nav-links">About</a>
+					</li>	
 
-			<li>
-				<a href="contact.html">Contact</a>
-			</li>
+					<li>					
+						<a href="contact.html" class="nav-links">Contact</a>
+					</li>
 
-			<li>
-				<a href="work.html">Work</a>
-			</li>
-		</ul>
-	</nav>
+					<li>
+						<a href="work.html" class="nav-links">Work</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="pri-content">
+				<!-- This is the main content of the page -->
+				<h2>Main Content Title</h2>
+				<article>
+					<!-- Paragraph 1, main content -->
+					<p>
+						This is where the text information will go. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante. This is where the text information will go. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
+					</p>
 
-	<main>
-		<div id="pri-content" class="column-left">
-			<!-- This is the main content of the page -->
-			<h2>Main Content Title</h2>
-			<article id="main-content" class="pri-content">
-				<!-- Paragraph 1, main content -->
-				<p>
-					This is where the text information will go. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
-				</p>
+					<!-- Paragraph 2, main content -->
+					<p>
+						This is where the text information will go. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante. This is where the text information will go. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
+					</p>
+				</article>
+			</div>	
 
-				<!-- Paragraph 2, main content -->
-				<p>
-					This is where the text information will go. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
-				</p>
-			</article>
-		</div>	
+			<!-- This is the sidebar content of the page -->
+			<div id="side-content">
+				<aside id ="sidebar">
+					<!-- side photo -->
+					<img src="img/logo-square.jpg" alt="cat" class="square">
 
-		<div id="sec-content" class="column-left">	
+					<h3>Title of the Sidebar</h3>
+
+					<p>
+						Sidebar text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
+					</p>
+				</aside>
+			</div>
+		</main>
+		<div id="sec-content">	
 			<!-- This is the secondary content of the page -->
 			<h3>Secondary Content Title</h3>
-			<article id="img-1" class="sec-content">
-				<!-- image 1 -->
+			<!-- images -->
 				<figure>
-					<img src="img/logo-square.jpg" alt="Cat" class="square">
+					<img src="img/logo-square.jpg" alt="cat" class="threeimg">
 					<figcaption>Image 1</figcaption>
 				</figure>
-			</article>	
-	
-			<article id="img-2" class="sec-content">
-				<!-- image 2 -->
-				<figure>
-					<img src="img/logo-square.jpg" alt="Cat" class="square">
-					<figcaption>Image 2</figcaption>
-				</figure>
-			</article>		
 
-			<article id="img-3" class="sec-content">
-				<!-- image 3 -->
 				<figure>
-					<img src="img/logo-square.jpg" alt="Cat" class="square">
+					<img src="img/logo-square.jpg" alt="cat" class="threeimg">
+					<figcaption>Image 2</figcaption>
+				</figure>	
+
+				<figure>
+					<img src="img/logo-square.jpg" alt="cat" class="threeimg">
 					<figcaption>Image 3</figcaption>
 				</figure>
-			</article>
 		</div>
+		<!-- This is the copyright notice and relevant links -->
+		<footer>
+			<p>CopyRight 2017, All Rights Reserved.</p>
+			<div id="social-media">
+				<a href="https://twitter.com/">
+					<img src="img/twitter.png" alt="Twitter" class="link">
+				</a>
 
-		<!-- This is the sidebar content of the page -->
-		<div id="side-content" class="column-right">
-			<article id="side-photo" class="side-content">
-				<!-- side photo -->
-				<figure>
-					<img src="img/logo-square.jpg" alt="Cat" class="square">
-				</figure>
-			</article>
+				<a href="https://www.youtube.com/">
+					<img src="img/youtube.png" alt="Youtube" class="link">
+				</a>	
 
-			<article>
-				<h3>Title of the Sidebar</h3>
-				<p>
-					Sidebar text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
-				</p>
-			</article>
-		</div>
-	</main>
-
-	<!-- This is the copyright notice and relevant links -->
-	<footer id="footer" class="site-border">
-		<p>CopyRight 2017, All Rights Reserved.</p>
-		<figure>
-			<img src="img/facebook.png" alt="Facebook" class="link">
-		</figure>
-
-		<figure>
-			<img src="img/youtube.png" alt="Youtube" class="link">
-		</figure>
-
-		<figure>
-			<img src="img/twitter.png" alt="Twitter" class="link">
-		</figure>
-	</footer>
+				<a href="https://www.facebook.com/">
+					<img src="img/facebook.png" alt="Facebook" class="link">
+				</a>
+			</div>	
+		</footer>
+	</div>
 </body>
 </html>
