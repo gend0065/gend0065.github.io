@@ -79,7 +79,7 @@
 			</p>
 			<p>	
 				<strong>Answer:</strong>
-				
+				The &#60;nav&#62; tag and the &#60;a&#62; tag are required to create a navigation list in HTML.
 			</p>
 		</li>
 
@@ -115,7 +115,11 @@
 			</p>
 			<p>	
 				<strong>Answer:</strong>
-				
+				<label for="favcolor">Select your favorite color:</label>
+				<input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+				This HTML is written as:<br>
+				&#60;label for="favcolor"&#62;Select your favorite color:&#60;/label&#62;<br>
+				&#60;input type="color" id="favcolor" name="favcolor" value="#ff0000"&#62;
 			</p>
 		</li>
 		
@@ -127,7 +131,13 @@
 			</p>
 			<p>	
 				<strong>Answer:</strong>
-				
+				The name attribute specifies the name of the element.<br>
+				&#60;button name="subject" type="submit" value="HTML"&#62;HTML&#60;/button&#62;<br>
+				&#60;iframe src="demo_iframe.htm" name="iframe_a"&#62;&#60;/iframe&#62;<br>
+
+				The value attribute specifies the value of the element.<br>
+				&#60;button name="subject" type="submit" value="fav_HTML"&#62;HTML&#60;/button&#62;<br>
+				&#60;meter min="0" low="40" high="90" max="100" value="95"&#62;&#60;/meter&#62; 
 			</p>
 		</li>
 
@@ -139,7 +149,10 @@
 			</p>
 			<p>	
 				<strong>Answer:</strong>
-				
+				The line below is red due to an inline style. In HTML, the style attribute is added to the opening tag:
+			</p>
+			<p style="color:red;">	
+				&#60;p style="color:red;"&#62;
 			</p>
 		</li>
 
@@ -151,9 +164,78 @@
 			</p>
 			<p>	
 				<strong>Answer:</strong>
-				
+				You would link an external style sheet by using the link tag in the head of the HTML. This is an example of how you would link an external CSS document to your HTML: <br>
+				&#60;link rel="stylesheet" type="text/css" href="mystyle.css"&#62;
+			</p>
+		</li>
+
+		<!-- Qus 13 -->
+		<li>
+			<p>
+				<strong>Question:</strong>
+				Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.
+			</p>
+			<p>	
+				<strong>Answer:</strong><br>
+				.center {<br>
+					&nbsp;&nbsp;&nbsp;position: absolute;<br>
+  					&nbsp;&nbsp;&nbsp;transform: translate(50%, 50%);<br>
+					&nbsp;&nbsp;&nbsp;width: 200px;<br>
+					&nbsp;&nbsp;&nbsp;heigth: 200px;<br>
+				}
+			</p>
+		</li>
+
+		<!-- Qus 14 -->
+		<li>
+			<p>
+				<strong>Question:</strong>
+				Create CSS keyframes block called "spin" that rotates an element.
+			</p>
+			<p>	
+				<strong>Answer:</strong><br>
+				@keyframes mymove {<br>
+					&nbsp;&nbsp;&nbsp;spin: infinite;<br>
+				}
+			</p>
+		</li>
+
+		<!-- Qus 15 -->
+		<li>
+			<p>
+				<strong>Question:</strong>
+				Create CSS animation block to rotate an element that has the following properties :
+				<ul>
+					<li>class "rotate-me"</li>
+					<li>It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"</li>
+				</ul>
+			</p>
+			<p>	
+				<strong>Answer:</strong><br>
+				.rotate-me {<br>
+					&nbsp;&nbsp;&nbsp;animation:<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spin 0.5s linear 5;<br>
+				}
+			</p>
+		</li>
+
+		<!-- Qus 16 -->
+		<li>
+			<p>
+				<strong>Question:</strong>
+				How would you include create an alert with string "I love JavaScript" using JavaScript?
+			</p>
+			<p>	
+				<strong>Answer:</strong>
+				alert ("I love JavaScript")
 			</p>
 		</li>
   </ol>
+  <div>
+  	<h3>References:</h3>
+  	<p>Examples for question 9 onward are provided by: 
+  		<a href="https://www.w3schools.com">https://www.w3schools.com</a>
+ 	</p>
+  </div>
 </body>
 </html>
