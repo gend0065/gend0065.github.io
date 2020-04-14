@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS clearfix*/
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* MOBILE VIEW */
+
+#wrapper {
+	background-image: url("../img/dynamic-style.png");
+}
+
+body {
+	font-family: 'open_sansregular';
+	font-weight: 700;
+}
+
+/* headings */
+h1 {
+	font-family: 'Inria Sans', sans-serif;
+	color: #72A9AE;
+	font-weight: bold;
+	font-size: 3em;
+	margin: 2%;
+}	
+
+h2 {
+	margin: 1% 0;
+	font-size: 1.5em;
+	transition: width 2s, height 2s, transform 5s;
+}
+
+h2:hover {
+ transform: rotate(45deg);
+}
+
+h2, th {
+	font-family: 'Inria Sans', sans-serif;
+	color: #72A9AE;
+	font-weight: bold;
+}
+
+/* topnav */
+#main-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #72A9AE;
+}
+
+#main-nav li {
+	float: left;
+}
+
+#main-nav li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+#main-nav li a:hover {
+	background-color: #454545;
+}
+
+main {
+	margin: 2%;
+}
+
+/* images */
+figure {
+	display: inline-block;
+	float: right;
+	margin: 0 2% 0 2%;
+}
+
+figure img {
+	width: 300px;
+}
+
+/* paragraphs */
+#about p {
+	margin-bottom: 1%;
+	font-weight: 400;
+	text-align: left;
+}
+
+/* table */
+#time-day {
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+#time-day td, #time-day th {
+	border: 1.5px solid black;
+	padding: 8px;
+	text-align: center;
+}
+
+#time-day tr:nth-child(odd){background-color: #f2f2f2;}
+
+#time-day th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: white;
+}
+
+/* profile */
+#profile {
+	display: block;
+	width: 100%;
+}
+
+#edit-profile {
+	width: 50%;
+}
+
+#profile-info {
+	float: right;
+	width: 50%;
+}
+
+/* form */
+
+* {
+	box-sizing: border-box;
+}
+
+input[type=text], input[type=email], select, textarea {
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+input[type=submit] {
+	color: black;
+	padding: 0.5px;
+	border: solid;
+	cursor: pointer;
+	float: right;
+}
+
+input[type=submit]:hover {
+	background-color: #454545;
+}
+
+label {
+	font-weight: bold;
+}
+
+#edit-profile {
+	border-radius: 5px;
+	padding: 20px;
+	width: 50%;
+	float: left;
+}
+
+#profile-info {
+	border-radius: 5px;
+	padding: 20px;
+	width: 50%;
+	float: left;
+}
+
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* footer */
+footer {
+	background-color: #454545;
+	color: white;
+	padding: 10%;
+}
+
+footer nav ul li, h4, div p {
+	text-align: center;
+	text-decoration: none;
+	margin: 2%;
+}
+footer nav ul li a {
+	text-align: left;
+	text-decoration: none;
+	color: white;
+}
+
+#nav-quick-links, #nav-follow-us, #nav-address{
+	width: 33.33%;
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+/* DESKTOP VIEW */
+
+@media only screen and (min-width: 768px) {
+
+.info, input[type=submit] {
+	width: 10%;
+	margin-top: 0;
+}
+
+}
