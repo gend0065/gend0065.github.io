@@ -144,28 +144,6 @@ function showformValues(form){
 	})				
 }
 
- function createTableFromJSON() {
-        var myBooks = [
-            {
-                "Student ID": "1",
-                "Name": "John Doe",
-                "Email": "jd@gmail.com",
-                "Marks": "92.60"
-            },
-            {
-                "Student ID": "2",
-                "Name": "Mark",
-                "Email": "mark@gmail.com",
-                "Marks": "56.00"
-            },
-            {
-                "Student ID": "3",
-                "Name": "Sam",
-                "Email": "sam@@gmail.com",
-                "Marks": "90.40"
-            }
-        ]
-
         // EXTRACT VALUE FOR HTML HEADER. 
         // ('Student ID', 'Name', 'Email' and 'Marks')
         var col = [];

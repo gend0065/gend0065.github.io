@@ -28,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	display: table;
 }
 ol, ul {
 	list-style: none;
@@ -60,7 +61,7 @@ table {
 }
 
 body {
-	font-family: 'open_sansregular';
+	font-family: 'advent_pro';
 	font-weight: 700;
 }
 
@@ -70,11 +71,12 @@ h1 {
 	color: #72A9AE;
 	font-weight: bold;
 	font-size: 3em;
-	margin: 2%;
+	padding: 2%;
 }	
 
 h2 {
-	margin: 1% 0;
+	margin: 0;
+	padding: 1% 0 1% 0;
 	font-size: 1.5em;
 	transition: width 2s, height 2s, transform 5s;
 }
@@ -116,12 +118,11 @@ h2, th {
 }
 
 main {
-	margin: 2%;
+	margin: 0 2% 0 2%;
 }
 
 /* images */
 figure {
-	display: inline-block;
 	float: right;
 	margin: 0 2% 0 2%;
 }
@@ -132,6 +133,7 @@ figure img {
 
 /* paragraphs */
 #about p {
+	margin-left: 0;
 	margin-bottom: 1%;
 	font-weight: 400;
 	text-align: left;
@@ -166,11 +168,12 @@ figure img {
 
 #edit-profile {
 	width: 50%;
+	float: left;
 }
 
 #profile-info {
-	float: right;
 	width: 50%;
+	margin-left: 50%;
 }
 
 /* form */
@@ -207,18 +210,21 @@ label {
 	font-weight: bold;
 }
 
+#profile {
+	width: 100%;
+}
+
 #edit-profile {
 	border-radius: 5px;
-	padding: 20px;
-	width: 50%;
+/*	padding: 20px;
+*/	width: 50%;
 	float: left;
 }
 
 #profile-info {
 	border-radius: 5px;
-	padding: 20px;
-	width: 50%;
-	float: left;
+/*	padding: 20px;
+*/	margin-left: 50%;
 }
 
 .col-25 {
@@ -244,7 +250,8 @@ label {
 footer {
 	background-color: #454545;
 	color: white;
-	padding: 10%;
+	height: 134px;
+	clear: both;
 }
 
 footer nav ul li, h4, div p {

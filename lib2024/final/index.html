@@ -6,11 +6,13 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Final</title>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">   
+	<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fontawesome.com/icons/user?style=solid" integrity="" crossorigin="anonymous">  
 </head>
 <body>
-	<div id="wrapper">
+	
 		<header>
 			<h1>MY LOGO</h1>
 			<!-- Tabs -->
@@ -38,182 +40,183 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<!-- about -->
-			<div id="about">
-				<article>
-					<h2>ABOUT</h2>
-					<figure>
-						<img src="img/bridge.png" alt="bridge" id="bridge">
-					</figure>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et pulvinar lacus, ut feugiat nulla. Ut posuere aliquet arcu, a feugiat ex elementum non. Phasellus molestie lobortis sapien vel pretium. Suspendisse porttitor lectus risus, efficitur ultricies mi suscipit sit amet. Maecenas ullamcorper enim sit amet felis condimentum bibendum ac et enim. Pellentesque condimentum turpis ipsum, quis porta ante facilisis ac. Sed placerat lacinia placerat. Etiam nec mattis turpis, vel convallis diam. 
-					</p>
+	<div id="wrapper">
+			<main>
+				<!-- about -->
+				<div id="about">
+					<article>
+						<h2>ABOUT</h2>
+						<figure>
+							<img src="img/bridge.png" alt="bridge" id="bridge">
+						</figure>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et pulvinar lacus, ut feugiat nulla. Ut posuere aliquet arcu, a feugiat ex elementum non. Phasellus molestie lobortis sapien vel pretium. Suspendisse porttitor lectus risus, efficitur ultricies mi suscipit sit amet. Maecenas ullamcorper enim sit amet felis condimentum bibendum ac et enim. Pellentesque condimentum turpis ipsum, quis porta ante facilisis ac. Sed placerat lacinia placerat. Etiam nec mattis turpis, vel convallis diam. 
+						</p>
 
-					<p>
-						Vestibulum gravida dignissim libero id sagittis. Phasellus lobortis vehicula finibus. Sed congue ut diam nec finibus. Etiam at bibendum erat. Quisque egestas diam pellentesque justo hendrerit, a consequat mauris semper. In sit amet lacus vestibulum, facilisis lorem ac, interdum urna. Mauris non diam neque. Ut sit amet metus molestie, bibendum enim id, bibendum sem. Pellentesque ut urna eget libero tempus tempor. Aenean a mauris in dolor egestas euismod at eu metus. Suspendisse vel libero vel purus consequat rhoncus. Suspendisse elementum, erat non euismod facilisis, nisi sapien molestie ex, quis placerat urna turpis et mi. Nulla vitae metus vestibulum, mattis turpis eget, dignissim erat. Fusce pulvinar, dui tincidunt posuere efficitur, neque urna iaculis diam, quis varius nunc felis id arcu. Nam nec diam in lorem laoreet sollicitudin. Nullam vel lectus et quam ullamcorper dignissim eget id sem. Phasellus vitae pharetra neque. Mauris at auctor diam. In lacinia ultricies metus, vel tempor nunc sodales non. Donec lacinia maximus magna nec auctor. Donec quis ornare nisl. Suspendisse eu nibh nec metus maximus tempor. 
-					</p>
-				</article>
-			</div>
-
-			<!-- schedule -->
-			<div id="schedule">
-				<h2>SCHEDULE</h2>
-				<table id="time-day">
-					<thead>
-						<tr>
-							<th>TIME</th>
-							<th>MONDAY</th>
-							<th>TUESDAY</th>
-							<th>WEDNESDAY</th>
-							<th>THURSDAY</th>
-							<th>FRIDAY</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>09:00 - 11:00</td>
-							<td>Communications I</td>
-							<td>Client Services</td>
-							<td>Special Collections</td>
-							<td>Directed Research Seminar</td>
-							<td>Client Services</td>
-						</tr>
-
-						<tr>
-							<td>11:00 - 12:30</td>
-							<td>Reference</td>
-							<td>Internet App</td>
-							<td>Library Software</td>
-							<td>French</td>
-							<td>Reference</td>
-						</tr>
-
-						<tr>
-							<td>14:00 - 15:00</td>
-							<td>Acquisitions</td>
-							<td>General Elective</td>
-							<td>Marketing</td>
-							<td>Emerging Library Tech</td>
-							<td>Library Software</td>
-						</tr>
-
-						<tr>
-							<td>15:30 - 17:30</td>
-							<td>French</td>
-							<td>French</td>
-							<td>Acquisitions</td>
-							<td>Subject Analysis</td>
-							<td>Internet App</td>
-						</tr>
-					</tbody>
-				</table>	
-			</div>
-
-			<!-- profile -->
-			<div id="profile">
-				<!-- edit profile -->
-				<div id="edit-profile">
-					<h2>EDIT PROFILE</h2>
-					<form action="/action_page.php">
-						<!-- name -->
-						<div class="row">
-						    <div class="col-25">
-						    	<label for="name">Name:</label>
-						    </div>
-
-						    <div class="col-75">
-						    	<input type="text" id="name" name="name">
-						    </div>
-						</div>
-
-						<!-- email -->
-						<div class="row">
-						    <div class="col-25">
-						    	<label for="email">Email:</label>
-						    </div>
-
-						    <div class="col-75">
-						    	<input type="email" id="email" name="email">
-						    </div>
-					  	</div>
-
-						<!-- address -->
-						<div class="row">
-						    <div class="col-25">
-						    	<label for="address">Address</label>
-						    </div>
-
-						    <div class="col-75">
-						    	<input type="text" id="address" name="address">
-						    </div>
-					  	</div>
-
-					  	<!-- city -->
-						<div class="row">
-						    <div class="col-25">
-						    	<label for="city">City</label>
-						    </div>
-
-						    <div class="col-75">
-						    	<input type="text" id="city" name="city">
-						    </div>
-					  	</div>
-
-					  	<!-- province -->
-						<div class="row">
-						    <div class="col-25">
-						    <label for="province">Province</label>
-						    </div>
-
-						    <div class="col-75">
-							    <select id="province" name="province">
-									<option value="select">Select Province</option>
-									<option value="AB">Alberta</option>
-									<option value="BC">British Columbia</option>
-									<option value="MB">Manitoba</option>
-									<option value="NB">New Brunswick</option>
-									<option value="NL">Newfoundland and Labrador</option>
-									<option value="NT">Northwest Territories</option>
-									<option value="NS">Nova Scotia</option>
-									<option value="NU">Nunavut</option>
-									<option value="ON">Ontario</option>
-									<option value="PE">Prince Edward Island</option>
-									<option value="QC">Quebec</option>
-									<option value="SK">Saskatchewan</option>
-									<option value="YT">Yukon</option>
-							    </select>
-						    </div>
-		  				</div>
-
-		  				<!-- postal code -->
-						<div class="row">
-						    <div class="col-25">
-						    	<label for="PostalCode">Postal Code</label>
-						    </div>
-
-						    <div class="col-75">
-						    	<input type="text" id="PostalCode" name="PostalCode">
-						    </div>
-					  	</div>
-
-					  	<!-- submit -->
-					  	<div id="submit" class="row">
-							<input type="submit" value="SUBMIT">
-						</div>
-		  			</form>
-		  		</div>		
-
-		  		<!-- profile info -->
-				<div id="profile-info">
-					<h2>PROFILE INFO</h2>
+						<p>
+							Vestibulum gravida dignissim libero id sagittis. Phasellus lobortis vehicula finibus. Sed congue ut diam nec finibus. Etiam at bibendum erat. Quisque egestas diam pellentesque justo hendrerit, a consequat mauris semper. In sit amet lacus vestibulum, facilisis lorem ac, interdum urna. Mauris non diam neque. Ut sit amet metus molestie, bibendum enim id, bibendum sem. Pellentesque ut urna eget libero tempus tempor. Aenean a mauris in dolor egestas euismod at eu metus. Suspendisse vel libero vel purus consequat rhoncus. Suspendisse elementum, erat non euismod facilisis, nisi sapien molestie ex, quis placerat urna turpis et mi. Nulla vitae metus vestibulum, mattis turpis eget, dignissim erat. Fusce pulvinar, dui tincidunt posuere efficitur, neque urna iaculis diam, quis varius nunc felis id arcu. Nam nec diam in lorem laoreet sollicitudin. Nullam vel lectus et quam ullamcorper dignissim eget id sem. Phasellus vitae pharetra neque. Mauris at auctor diam. In lacinia ultricies metus, vel tempor nunc sodales non. Donec lacinia maximus magna nec auctor. Donec quis ornare nisl. Suspendisse eu nibh nec metus maximus tempor. 
+						</p>
+					</article>
 				</div>
-			</div>	
-		</main>
-		<footer id="footer">
-			<!-- other info -->
+
+				<!-- schedule -->
+				<div id="schedule">
+					<h2>SCHEDULE</h2>
+					<table id="time-day">
+						<thead>
+							<tr>
+								<th>TIME</th>
+								<th>MONDAY</th>
+								<th>TUESDAY</th>
+								<th>WEDNESDAY</th>
+								<th>THURSDAY</th>
+								<th>FRIDAY</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>09:00 - 11:00</td>
+								<td>Communications I</td>
+								<td>Client Services</td>
+								<td>Special Collections</td>
+								<td>Directed Research Seminar</td>
+								<td>Client Services</td>
+							</tr>
+
+							<tr>
+								<td>11:00 - 12:30</td>
+								<td>Reference</td>
+								<td>Internet App</td>
+								<td>Library Software</td>
+								<td>French</td>
+								<td>Reference</td>
+							</tr>
+
+							<tr>
+								<td>14:00 - 15:00</td>
+								<td>Acquisitions</td>
+								<td>General Elective</td>
+								<td>Marketing</td>
+								<td>Emerging Library Tech</td>
+								<td>Library Software</td>
+							</tr>
+
+							<tr>
+								<td>15:30 - 17:30</td>
+								<td>French</td>
+								<td>French</td>
+								<td>Acquisitions</td>
+								<td>Subject Analysis</td>
+								<td>Internet App</td>
+							</tr>
+						</tbody>
+					</table>	
+				</div>
+
+				<!-- profile -->
+				<div id="profile">
+					<!-- edit profile -->
+					<div id="edit-profile">
+						<h2>EDIT PROFILE</h2>
+						<form action="/action_page.php">
+							<!-- name -->
+							<div class="row">
+							    <div class="col-25">
+							    	<label for="name">Name:</label>
+							    </div>
+
+							    <div class="col-75">
+							    	<input type="text" id="name" name="name">
+							    </div>
+							</div>
+
+							<!-- email -->
+							<div class="row">
+							    <div class="col-25">
+							    	<label for="email">Email:</label>
+							    </div>
+
+							    <div class="col-75">
+							    	<input type="email" id="email" name="email">
+							    </div>
+						  	</div>
+
+							<!-- address -->
+							<div class="row">
+							    <div class="col-25">
+							    	<label for="address">Address</label>
+							    </div>
+
+							    <div class="col-75">
+							    	<input type="text" id="address" name="address">
+							    </div>
+						  	</div>
+
+						  	<!-- city -->
+							<div class="row">
+							    <div class="col-25">
+							    	<label for="city">City</label>
+							    </div>
+
+							    <div class="col-75">
+							    	<input type="text" id="city" name="city">
+							    </div>
+						  	</div>
+
+						  	<!-- province -->
+							<div class="row">
+							    <div class="col-25">
+							    <label for="province">Province</label>
+							    </div>
+
+							    <div class="col-75">
+								    <select id="province" name="province">
+										<option value="select">Select Province</option>
+										<option value="AB">Alberta</option>
+										<option value="BC">British Columbia</option>
+										<option value="MB">Manitoba</option>
+										<option value="NB">New Brunswick</option>
+										<option value="NL">Newfoundland and Labrador</option>
+										<option value="NT">Northwest Territories</option>
+										<option value="NS">Nova Scotia</option>
+										<option value="NU">Nunavut</option>
+										<option value="ON">Ontario</option>
+										<option value="PE">Prince Edward Island</option>
+										<option value="QC">Quebec</option>
+										<option value="SK">Saskatchewan</option>
+										<option value="YT">Yukon</option>
+								    </select>
+							    </div>
+			  				</div>
+
+			  				<!-- postal code -->
+							<div class="row">
+							    <div class="col-25">
+							    	<label for="PostalCode">Postal Code</label>
+							    </div>
+
+							    <div class="col-75">
+							    	<input type="text" id="PostalCode" name="PostalCode">
+							    </div>
+						  	</div>
+
+						  	<!-- submit -->
+						  	<div id="submit" class="row">
+								<input type="submit" value="SUBMIT">
+							</div>
+			  			</form>
+			  		</div>		
+
+			  		<!-- profile info -->
+					<div id="profile-info">
+						<h2>PROFILE INFO</h2>
+						<i class="fas fa-user"></i>
+					</div>
+				</div>	
+			</main>			
+		<footer id="bottom">
 			<nav id="btmnav">
-				<div id="nav-quick-links" class="footer">
+				<div id="nav-quick-links">
 					<h4>QUICK LINKS</h4>
 					<div id="qlink">
 						<ul id="foot-nav" class="nav">	
