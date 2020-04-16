@@ -9,20 +9,6 @@ window.onload = init;
 // function must have a opening curly brace and a closing one {} similar to css
 // the name of a function is followed by brackets ()
 function init() {
-
-	// document is the keyword to target the current webpage
-	// with queryselecotr we are asking the document to find an element that matches the CSS selector defined in the brackets 
-	// here we target #color-1 i.e. element with id color-1
-	// onclick is telling the browser to fire the function "changeColor" when the selected element is clicked 
-	document.querySelector('#color-1').onclick = changeColor;
-	document.querySelector('#color-2').onclick = changeColor;
-	document.querySelector('#color-3').onclick = changeColor;
-
-	document.querySelector('#loadTable').onclick = createTableFromJSON;
-
-
-	
-	document.querySelector('.reset').onclick = colorReset;
 	
 	document.querySelector('.ham').onclick = showHideMobileMenu;
 
@@ -44,81 +30,6 @@ function init() {
    		 })
 	});
 
-}
-
-// changeColor will be the function used by the color boxes to change colors 
-// name of a function must be in camel case, there should be no spaces and avoid hyphens as well\
-// Also the name of a function must start with a lower case alphabet
-function changeColor() {
-
-	// to create a variable in JS, we use var keyword 
-	// var nameOfVariable = value;
-	var elementId = this.id;
-	// "this" is the keyword used to access the current element that is being interacted with 
-	// in this case, "this" targets the color box that is being clicked
-
-	// alert is used to create an alert box with the text given in the brackets 
-	// in JS to concatenate JS variables with text/string we use + symbol
-	//alert(elementId+" is clicked");
-
-	this.style.backgroundColor = "red";
-	// .style is the keyword to target the styles of the element 
-	// backgroundColor is used to change the backgroundColor of element 
-
-	// we assign the indicator-text element to indicatorText variable
-	var indicatorText = document.getElementById("indicator-text");
-	// document.getElementById is used to target elements using id
-	// this method would not work for class selector
-
-	// if statement is used in JS to create conditional code which only executes if all the conditions given in if statement are satisfied
-	// .includes(desiredText) checks for the desisredText in the selected HTML and gives true or false depending on the given conditions
-	// if(indicatorText.innerHTML.includes(elementId)) {
-	// 	alert(elementId+"already exists");
-	// }
-
-	// ! is used to create a negative condition checking, meaning to use the opposite of the condition given inside the if statement
-	if(!indicatorText.innerHTML.includes(elementId)) {
-	// var.innerHTML is used to target the innerHTML of the given element and modify its value
-	// to make sure the existing text is not deleted we use indicatorText.HTML and concatenate it with the desired text
-		indicatorText.innerHTML = indicatorText.innerHTML+"<br>"+this.id+ " is active";
-	}
-
-}
-
-// this function will be used to reset the colors of color boxes 
-function colorReset() {
-
-	// .getElementsByClassName creates an array of elements having the same class
-	// jsColorDivs = ["color-1", "color-2", "color-3"]
-	var jsColorDivs = document.getElementsByClassName('js-color');
-
-	// we use for loop to iterate through elements 
-	// A for loop has three instructions 
-	// 1 ) The first instruction is to create a counter variable(var i) and set a starting value(i = 0)
-	// 2) The second instruction is to keep looping until this condition is true (till i is less than the total length of array jsColorDivs)
-	// 3) is to set the step counter for the counter variable (i++ is the shorthand to add 1 to i for each loop)
-	for(var i =0; i <jsColorDivs.length; i++ ) {
-		// console log is used to write text/string to the console log of the browser
-		console.log(i);
-
-		jsColorDivs[i].style.backgroundColor ="";
-	}
-
-	document.getElementById("indicator-text").innerHTML="";
-}
-
-// To show and hide mobile menu when .ham is clicked
-function showHideMobileMenu() {
-
-	var mobileNav = document.querySelector('.mobile-nav');
-
-	// in a if statement == is used to compare two value, if the values matches then the condition is true
-	// an if statement is followed by an else statement which runs when the given condition is not met
-	if(mobileNav.style.display=="block") {
-		mobileNav.style.display="none";
-	} else {
-		mobileNav.style.display="block";
-	}
 }
 
 // to show the form values in the results div which takes the argument "form"
